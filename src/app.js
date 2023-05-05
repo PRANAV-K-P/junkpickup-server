@@ -33,7 +33,7 @@ io.on('connection', (socket) => {
   });
 });
 
-app.use(express.static(path.join(__dirname,'../public')))
+app.use(express.static(path.join(__dirname, '../public')));
 app.use('/api/users', require('./api/routes/user.route'));
 app.use('/api/admin', require('./api/routes/admin.route'));
 app.use('/api/pincode', require('./api/routes/pincode.route'));
